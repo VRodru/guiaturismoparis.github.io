@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Guide of Paris</title>
+    <link rel="icon" href="image/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/estilo.css" rel="stylesheet">
+</head>
+<body>
+    <div id="inicio" class="cover-image"></div>
+    <div class="line"></div>
+    <div class="welcome-message">Welcome!</div>
+
+    <div class="animated-text">
+        <span>A trip </span><span id="text"></span>
+    </div>
+
+    <header id="header">
+        <img alt="Logo" src='image/logo-paris-en.png'/>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Home</a></li>
+                <li><a href="#integrantes">Team</a></li>
+                <li><a href="#sitios">Tourist Spots</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#infografia">Infographic</a></li>
+            </ul>
+        </nav>
+
+        <div class="language-icons">
+            <a href="index.html"><img src="https://cdn-icons-png.flaticon.com/512/555/555635.png" alt="Espanol" /></a>
+            <a href="index_en.html"><img src="https://cdn-icons-png.flaticon.com/512/555/555417.png" alt="Ingles" /></a>
+            <a href="index_fr.html"><img src="https://cdn-icons-png.flaticon.com/512/206/206657.png" alt="Frances" /></a>
+        </div>
+    </header>
+
+    <main>
+        <section id="integrantes">
+            <div class="integrantes-container">
+                <div class="integrante">
+                    <img alt='Imagen Autor' src='image/Foto.png'/>
+                    <div class="integrante-texto">
+                        <div class="bocadillo">HELLO!</div>
+                        <h2>I'm <strong>Vicente Antonio<br/>Rodríguez Montesinos</strong></h2>
+                        <div class="subtitulo">Your expert Paris tour guide</div>
+                        <hr>
+                        <p>I was born, grew up, and trained in Spain, but I currently reside in Bogotá. Right now, I am virtually pursuing my first semester in Systems Engineering at the National Unified Corporation of Higher Education (CUN), which has allowed me to balance my studies with my other great passions: traveling, experiencing new cultures, and exploring the history of the places I visit.</p>
+                    </div>
+                    <p>Although my life has taken interesting turns, I have always maintained a deep love for travel, history, and the cultures I have had the chance to experience. These interests have led me to develop a true passion for being a tour guide, and for some time now, I have dedicated myself to sharing with others what I have learned about the most fascinating places in the world, especially Paris, a city that holds a very special place in my heart.</p>
+                    <p>History is one of my greatest driving forces. I am passionate about uncovering the stories hidden in monuments, streets, museums, and corners of cities, understanding how each place has evolved to become what it is today. For this reason, I greatly enjoy traveling, not only to discover new places but also to live each experience through the history that accompanies them. My wife and I often plan trips to discover together everything the destinations have to offer, always with a gastronomic and cultural approach because, for me, good food is also a way to get to know a city from the inside.</p>
+                    <p>Additionally, when I need a moment of rest, there's nothing like losing myself in a good book. The genres of fantasy, science fiction, and horror are the ones that captivate me the most, especially works by authors like Tolkien, Lovecraft, and Katzenbach. A good book accompanied by a glass of wine is my perfect way to disconnect and immerse myself in other worlds, helping me keep my mind open and full of new ideas for my tours.</p>
+                    <p>If you're looking for a unique experience in Paris, a different way of getting to know the city, rich in history, culture, and anecdotes, I invite you to join me on this journey. My goal is to offer you an enjoyable, close, and enriching experience where you'll not only discover the main tourist attractions but also those lesser-known details that make the city truly special. It will be a pleasure to share this adventure with you and provide you with an unforgettable experience!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Sitios Turísticos -->
+        <section id="sitios">
+            <div class="polaroid-grid">
+                <!-- Bloques Polaroid -->
+                <a href="eiffel_en.html"><div class="polaroid">
+                    <img alt='Torre Eiffel' src='https://st.depositphotos.com/1002172/3942/i/450/depositphotos_39425597-stock-photo-tour-eiffel-paris.jpg' />
+                    <div class="caption">Eiffel Tower</div>
+                </div></a>
+                <a href="arc_triomphe_en.html"><div class="polaroid">
+                    <img alt='Arco Triunfo' src='https://paristickets.tours/wp-content/uploads/2022/09/arc-de-triomphe-ticket-13.jpg' />
+                    <div class="caption">Arc de Triomphe</div>
+                </div></a>
+                <a href="notre_dame_en.html"><div class="polaroid">
+                    <img alt='Notre Dame' src='https://www.tigercat.com/wp-content/uploads/2021/11/P4K94N-1400-web.jpg' />
+                    <div class="caption">Notre Dame</div>
+                </div></a>
+                <a href="versalles_en.html"><div class="polaroid">
+                    <img alt='Palacio de Versalles' src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_083.jpg/640px-Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_083.jpg' />
+                    <div class="caption">Versailles Palace</div>
+                </div></a>
+                <a href="louvre_en.html"><div class="polaroid">
+                    <img alt='Museo Louvre' src='https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/db/8f/1c.jpg' style='border:1px solid #000;' width='300px'/>
+                    <div class="caption">Louvre Museum</div>
+                </div></a>
+                <a href="sacre_coeur_en.html"><div class="polaroid">
+                    <img alt='Basilica del Sagrado Corazon' src='https://st3.depositphotos.com/1407079/36158/i/450/depositphotos_361581890-stock-photo-famous-sacre-coeur-basilica-montmartre.jpg' />
+                    <div class="caption">Basilica of the Sacré-Cœur</div>
+                </div></a>
+            </div>
+        </section>
+
+
+        <!-- Sección de Video -->
+        <section id="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Vjofugi3NG0?si=UV_cAlO7nonbqlAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <!-- Sección de Infografía sobre la Aldea de la Reina -->
+        <section id="infografia">
+            <h2>Infographic: The Queen's Village at Versailles Palace</h2>
+
+            <!-- Carrusel de Imágenes -->
+            <div id="carouselAldeaReina" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Imagen 1 -->
+                    <div class="carousel-item active">
+                        <img src="https://us.123rf.com/450wm/ivantagan/ivantagan1609/ivantagan160900018/63096486-paisaje-de-la-herencia-de-aldea-de-la-reina-mar%C3%ADa-antonieta-cerca-del-palacio-de-versalles-la.jpg" class="d-block w-100" alt="Vista general de la Aldea de la Reina">
+                    </div>
+                    <!-- Imagen 2 -->
+                    <div class="carousel-item">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/22/fe/d1/fuori.jpg" class="d-block w-100" alt="Lago en la Aldea de la Reina">
+                    </div>
+                    <!-- Imagen 3 -->
+                    <div class="carousel-item">
+                        <img src="https://us.123rf.com/450wm/ivantagan/ivantagan1609/ivantagan160900018/63096486-paisaje-de-la-herencia-de-aldea-de-la-reina-mar%C3%ADa-antonieta-cerca-del-palacio-de-versalles-la.jpg" class="d-block w-100" alt="Cottage de la Reina">
+                    </div>
+                    <!-- Imagen 4 -->
+                    <div class="carousel-item">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/22/fe/d1/fuori.jpg" class="d-block w-100" alt="Molino en la Aldea de la Reina">
+                    </div>
+                    <!-- Imagen 5 -->
+                    <div class="carousel-item">
+                        <img src="https://us.123rf.com/450wm/ivantagan/ivantagan1609/ivantagan160900018/63096486-paisaje-de-la-herencia-de-aldea-de-la-reina-mar%C3%ADa-antonieta-cerca-del-palacio-de-versalles-la.jpg" class="d-block w-100" alt="Templo de la Amistad en la Aldea de la Reina">
+                    </div>
+                </div>
+                <!-- Controles del Carrusel -->
+                <button class="carousel-control-prev" type="button" data-target="#carouselAldeaReina" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselAldeaReina" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+            </div>
+
+            <div style="max-width: 800px; margin: 30px auto; text-align:justify;">
+                <p>The <strong>Queen's Village</strong>, also known as the <strong>Hameau de la Reine</strong>, is a charming rustic retreat located on the grounds of the Palace of Versailles, created for Queen Marie Antoinette in the 18th century. This small village was designed to allow her to escape the formality of the royal court and enjoy country life, far from the strict rules of the palace. The village was built with picturesque houses, a lake, and manicured gardens, emulating an idyllic countryside landscape.</p>
+
+                <p>The village includes several rustic-style buildings, such as the <strong>Le Cottage de la Reine</strong>, the <strong>Temple of Friendship</strong>, and several water mills. The queen and her court used to enjoy outdoor activities like boat rides on the lake and visits to the country houses. The space was a personal refuge for Marie Antoinette, allowing her to disconnect from the political and social pressures of the time.</p>
+
+                <h3>Why visit the Queen's Village?</h3>
+                <ul>
+                    <li><strong>A break from the opulence of the palace:</strong> The Queen's Village offers a fascinating insight into the private life of Queen Marie Antoinette, in contrast to the grandeur of the Palace of Versailles.</li>
+                    <li><strong>A picturesque design:</strong> The landscape and rustic buildings allow visitors to experience a natural and serene environment, perfect for peaceful walks.</li>
+                    <li><strong>A place full of history:</strong> Visiting the village transports you to the time of the French Revolution, when Marie Antoinette sought refuge in this charming paradise, far from the tensions of the palace.</li>
+                    <li><strong>Connection with nature:</strong> The natural setting, with its lake, gardens, and mills, is perfect for enjoying the beauty of the landscape while learning about the queen's history.</li>
+                </ul>
+            </div>
+
+            <p class="final-message">Visit the Queen's Village and enjoy one of the most romantic and fascinating escapes in the history of France!</p>
+        </section>
+    </main>
+
+    <a href="#inicio" id="back-to-top" title="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <footer>
+        <p>&copy; 2024 Paris Travel Guide | All rights reserved</p>
+    </footer>
+
+    <script>
+        // Código para el efecto de texto animado
+        const texts = ["through Paris", "for YOU", "for EVERYONE"];
+        let currentTextIndex = 0;
+        let currentCharIndex = 0;
+        let textElement = document.getElementById("text");
+
+        function typeText() {
+            textElement.textContent = texts[currentTextIndex].substring(0, currentCharIndex);
+
+            if (currentCharIndex < texts[currentTextIndex].length) {
+                currentCharIndex++;
+                setTimeout(typeText, 100);
+            } else {
+                setTimeout(deleteText, 1000);
+            }
+        }
+
+        function deleteText() {
+            if (currentCharIndex > 0) {
+                currentCharIndex--;
+                textElement.textContent = texts[currentTextIndex].substring(0, currentCharIndex);
+                setTimeout(deleteText, 50);
+            } else {
+                currentTextIndex = (currentTextIndex + 1) % texts.length;
+                setTimeout(typeText, 500);
+            }
+        }
+
+        // Comienza el proceso de escritura
+        typeText();
+
+        // Detectar el evento de scroll para cambiar la opacidad del header
+        window.onscroll = function() {
+            let header = document.getElementById("header");
+            if (window.scrollY > 50) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        }
+
+        // Script para desplazamiento suave al hacer clic en los enlaces del menú
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault(); // Evita el comportamiento por defecto del enlace
+
+                const targetId = this.getAttribute('href').substring(1); // Obtiene el ID de destino
+                const targetElement = document.getElementById(targetId); // Busca el elemento por su ID
+
+                // Desplazamiento suave hacia el destino
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+
+        // Obtener el botón de "Volver arriba"
+        let backToTopButton = document.getElementById("back-to-top");
+
+        // Mostrar el botón de "Volver arriba" después de hacer scroll
+        window.addEventListener('scroll', function () {
+            // Verifica si el scroll ha bajado más de 300px
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopButton.style.display = "block"; // Muestra el botón
+            } else {
+                backToTopButton.style.display = "none"; // Oculta el botón
+            }
+
+            // Lógica para cambiar la opacidad del menú
+            let header = document.getElementById("header");
+            if (window.scrollY > 50) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
+
+        // Hacer que la flecha suba suavemente cuando se haga clic
+        backToTopButton.addEventListener("click", function (e) {
+            e.preventDefault(); // Evita que el enlace realice la acción por defecto
+            window.scrollTo({
+                top: 0, // Desplazar a la parte superior de la página
+                behavior: "smooth" // Desplazamiento suave
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

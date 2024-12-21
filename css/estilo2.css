@@ -1,0 +1,166 @@
+/* Estilos generales */
+section {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.cover-image {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
+}
+
+/* Estilos para el sitio turístico */
+#sitio-turistico {
+    align-items: flex-start; /* Alineamos desde el principio */
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    clear: both; /* Asegura que el texto no se desborde debajo */
+    display: block; /* Cambiar a bloque para que el texto fluya alrededor */
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: justify;
+    width: 50%; /* Ocupa 1/2 de la pantalla */
+}
+
+#sitio-turistico h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.descripcion-sitio, .informacion-sitio, .galeria, .mapa {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}
+
+#descripcion, #informacion, #galeria, #mapa {
+    padding-top: 100px;
+}
+
+#galeria {
+    padding-top: 200px;
+}
+
+#mapa {
+    padding-bottom: 150px;
+}
+
+
+.descripcion-sitio p {
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    padding-left: -30px; /* Desplaza el resto del párrafo hacia la derecha */
+    text-indent: 40px; /* Indenta la primera línea a la izquierda */
+}
+
+.informacion-sitio h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.informacion-sitio img {
+    border-radius: 8px;
+    float: right; /* Flota a la izquierda */
+    height: auto;
+    margin-right: 20px;
+    margin-top: 5px;
+    width: 300px;
+}
+
+.info-item {
+    margin-bottom: 15px;
+}
+
+.info-item h4 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.info-item p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.galeria h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Estilos de la galería con efecto de zoom */
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+}
+
+.grid-item:hover img {
+    transform: scale(1.1);
+}
+
+/* centrar mapa */
+.mapa {
+    text-align: center; /* Centra el contenido del mapa */
+    margin-top: 40px; /* Espacio superior */
+}
+
+.mapa iframe {
+    border: none; /* Elimina el borde */
+    display: block; /* Hace que el iframe se comporte como un bloque */
+    height: 450px; /* Ajusta la altura del mapa según tus preferencias */
+    margin: 0 auto; /* Centra el iframe */
+    max-width: 100%; /* Asegura que el mapa no se desborde */
+    width: 90%; /* Ajusta el ancho según lo que necesites */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .grid-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+}
