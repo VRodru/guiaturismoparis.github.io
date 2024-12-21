@@ -20,8 +20,8 @@ section {
 .container {
     clear: both; /* Asegura que el texto no se desborde debajo */
     display: block; /* Cambiar a bloque para que el texto fluya alrededor */
-    margin-bottom: 20px;
     padding: 20px;
+    padding-bottom: 0;
     text-align: justify;
     width: 50%; /* Ocupa 1/2 de la pantalla */
 }
@@ -141,6 +141,7 @@ section {
 .mapa {
     text-align: center; /* Centra el contenido del mapa */
     margin-top: 40px; /* Espacio superior */
+    padding-bottom: 0;
 }
 
 .mapa iframe {
