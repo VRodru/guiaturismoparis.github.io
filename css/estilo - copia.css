@@ -295,68 +295,82 @@ iframe {
 
 /* Estilos generales para la sección */
 #infografia {
-    padding: 120px 20px 50px 20px;
-    background-color: #f7f7f7;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    padding: 120px 20px 0 20px; /* 40A 30D 20B 10I */
+    padding-top: 120px;
     text-align: center;
 }
 
-#infografia h2 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 20px;
+#infografia p strong {
+    font-weight: bold;
 }
 
-#infografia h3 {
-    font-size: 28px;
-    color: #4d4d4d;
-    margin-bottom: 10px;
-}
-
-#infografia p {
-    font-size: 16px;
+/* Estilos para el mensaje final */
+#infografia p.final-message {
     color: #555;
-}
-
-
-.infografia-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.infografia-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    text-align: left;
-}
-
-.infografia-item.reverse {
-    flex-direction: row-reverse;
-}
-
-.infografia-texto {
-    width: 50%;
-    padding: 20px;
-    text-align: justify;
-}
-
-.infografia-imagen {
-    width: 50%;
-    padding: 20px;
-}
-
-.infografia-imagen img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.final-message {
     font-size: 18px;
     font-weight: bold;
-    margin-top: 40px;
-    color: #333;
+    margin-top: 30px;
+}
+
+/* Estilos generales para la sección */
+#infografia h2 {
+    color: #2c3e50;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Estilos del carrusel */
+#carouselAldeaReina {
+    height: auto;  /* La altura del carrusel se ajustará automáticamente */
+    margin: 0 auto;
+    position: relative;  /* Para posicionar las flechas correctamente */
+    width: 800px;  /* Hace que el carrusel ocupe todo el ancho de la pantalla */
+}
+
+/* Asegura que las imágenes sean del mismo tamaño y no superen los 500px */
+#carouselAldeaReina .carousel-item img {
+    border-radius: 8px;
+    height: 500px;  /* Limitar la altura de las imágenes a 500px */
+    object-fit: cover;  /* Hace que las imágenes mantengan su proporción sin deformarse */
+    width: 100%;  /* Las imágenes ocuparán todo el ancho del carrusel */
+}
+
+/* Estilos personalizados para las flechas del carrusel */
+.carousel-control-prev, .carousel-control-next {
+    align-items: center;
+    background-color: transparent;  /* Fondo totalmente transparente */
+    border: none;  /* Eliminar cualquier borde */
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    opacity: 0.6;  /* Hacer las flechas más transparentes */
+    position: absolute;
+    top: 50%;  /* Posiciona las flechas a la mitad de la imagen */
+    transform: translateY(-50%);  /* Alinea las flechas verticalmente al centro */
+    transition: opacity 0.3s ease;
+    width: 40px;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Fondo ligeramente visible al pasar el mouse */
+    opacity: 1;  /* Aumentar la opacidad al pasar el mouse */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    color: #fff;  /* Mantener las flechas blancas */
+    font-size: 24px;  /* Asegurarse de que las flechas tengan un tamaño adecuado */
+}
+
+/* Estilo para el botón de siguiente */
+.carousel-control-next {
+    right: 10px;
+}
+
+/* Estilo para el botón de anterior */
+.carousel-control-prev {
+    left: 10px;
 }
 
 #back-to-top {
@@ -470,14 +484,6 @@ footer p {
     }
 
     iframe {
-        width: 100%;
-    }
-
-    .infografia-item {
-        flex-direction: column;
-    }
-
-    .infografia-texto, .infografia-imagen {
         width: 100%;
     }
 }
